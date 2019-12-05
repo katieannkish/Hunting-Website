@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Locations</title>
+<link  rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<h1> Store Locator </h1>
+<div class = "nav">
+    <ul>
+          <li><a href="index.jsp">home</a></li>
+          <li><a href="Products.html">product gallery</a></li>
+          <li><a href="location.html">store locator</a></li>
+          <li><a href="contact.html">contact us</a></li>
+          <li style="float:right"><a href="viewCart.jsp"><img src = "images/shopping-cart-of-checkered-design_318-50865.jpg"/></a></li>
+          <li style="float:right">		
+          		<form name=register action=register.jsp method=get>
+				<input type="submit" name="submit" value="Register" />
+				</form>
+			</li>
+			<li style="float:right">	
+				<form name=login action=login.jsp method=get>
+		<input type="submit" name="submit" value="Login" />
+</form>
+		</li>
+    </ul>
+</div>
+
+
+
+<form name=findClosestLocation action=location method=post>
+<label>
+	Please enter your zipcode and we will print the address of the location closest to you. 
+</label>
+<input type = text name = userZip value = "userZip" />
+	<input type="submit" name="submit" value="Go" />
+
+</form>
+
+
+
+
+
+
+
+
+<div id="googleMap" style="width:100%;height:400px"></div>
+<script>
+	function myMap() {
+	var mapProp= {
+    	center:new google.maps.LatLng(33.948006,-83.377319),
+    	zoom:5,
+		};
+	var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0ZakZAKF1QVeLv3aVbbsW1rdzCwcsCMM&callback=myMap"></script>
+<div class ="bottom">
+<p>Hunting Haven Established 2018</p>
+</div>
+</body>
+</html>

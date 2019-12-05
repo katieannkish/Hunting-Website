@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Product List</title>
+<link  rel="stylesheet" type="text/css" href="style.css"> 
+</head>
+<body>
+<h1>Product Gallery</h1>
+
+<div class = "nav">
+    <ul>
+          <li><a href="index.jsp">home</a></li>
+          <li><a href="Products.html">product gallery</a></li>
+          <li><a href="location.html">store locator</a></li>
+          <li><a href="contact.html">contact us</a></li>
+          <li style="float:right"><a href="viewCart.jsp"><img src = "images/shopping-cart-of-checkered-design_318-50865.jpg"/></a></li>
+          <li style="float:right">		
+          		<form name=register action=register.jsp method=get>
+				<input type="submit" name="submit" value="Register" />
+				</form>
+			</li>
+			<li style="float:right">	
+				<form name=login action=login.jsp method=get>
+		<input type="submit" name="submit" value="Login" />
+</form>
+		</li>
+    </ul>
+</div>
+
+
+<div class = "prod">
+
+<h2>Skinny Pak</h2>
+<img src ="images/vest.jpg"/>
+<p>$42.00</p>
+<form name=skinnyPak action=addToCart method=get>
+<label>
+	Quantity: 
+</label>
+<input type = text name =quantity value = "quantity" />
+<input type="submit" name="submit" value="Add to Cart" />
+<input type=hidden name="Skinny Pak" value="Skinny Pak" />
+<input type=hidden name="price" value= "42" />
+</form>
+
+
+
+<h2>Half-A-Man</h2>
+<img src ="images/man.jpeg"/>
+<p>$28.00</p>
+<form name=halfMan action=addToCart method=get>
+<label>
+	Quantity: 
+</label>
+<input type = text name =quantity value = "quantity" />
+<input type="submit" name="submit" value="Add to Cart" />
+<input type=hidden name="Half-A-Man" value="Half-A-Man" />
+<input type=hidden name="price" value= "28" />
+</form>
+
+
+
+<h2>Single Jake</h2>
+<img src ="images/decoy.jpg"/>
+<p>$18.00</p>
+<form name=singleJake action=addToCart method=get>
+<label>
+	Quantity: 
+</label>
+<input type = text name =quantity value = "quantity" />
+<input type="submit" name="submit" value="Add to Cart" />
+<input type=hidden name="Single Jake"value="Single Jake" />
+<input type=hidden name="price" value= "18" />
+</form>
+
+
+
+<h2>Sneak-E-Tom</h2>
+<img src ="images/boots.jpg"/>
+<p>$30.00</p>
+<form name=sneakyTom  action=addToCart method=get>
+<label>
+	Quantity: 
+</label>
+<input type = text name =quantity value = "quantity" />
+<input type="submit" name="submit" value="Add to Cart" />
+<input type=hidden name="Sneak-E-Tom" value="Sneak-E-Tom"  />
+<input type=hidden name="price" value= "30" />
+
+</form>
+
+
+
+<h2>Tom Foolery</h2>
+<img src ="images/call.jpg"/>
+<p>$25.00</p>
+
+<form name=tomFoolery action=addToCart method=get>
+<label>
+	Quantity: 
+</label>
+<input type = text name =quantity value = "quantity" />
+<input type="submit" name="submit" value="Add to Cart" />
+<input type=hidden name="Tom Foolery" value="Tom Foolery"  />
+<input type=hidden name="price" value= "25" />
+</form>
+
+</div>
+
+<div class ="bottom">
+<p>Hunting Haven Established 2018</p>
+</div>
+
+</body>
+</html>
